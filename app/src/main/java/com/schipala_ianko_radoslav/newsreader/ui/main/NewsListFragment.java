@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.schipala_ianko_radoslav.newsreader.databinding.NewsListFragmentBinding;
-import com.schipala_ianko_radoslav.newsreader.model.NewsListViewModel;
+import com.schipala_ianko_radoslav.newsreader.model.NewsReaderViewModel;
 
 public class NewsListFragment extends Fragment {
 
-    private NewsListViewModel mViewModel;
+    private NewsReaderViewModel mViewModel;
 
     public static NewsListFragment newInstance() {
         return new NewsListFragment();
@@ -24,7 +24,7 @@ public class NewsListFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(NewsListViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(NewsReaderViewModel.class);
         getLifecycle().addObserver(mViewModel);
     }
 
