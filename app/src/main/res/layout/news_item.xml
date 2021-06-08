@@ -27,6 +27,7 @@
             android:paddingHorizontal="8dp"
             android:paddingVertical="4dp"
             android:text="@{viewModel.title}"
+            android:textStyle="bold"
             tools:text="Title" />
 
         <androidx.appcompat.widget.AppCompatImageView
