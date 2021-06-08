@@ -1,9 +1,10 @@
-package com.schipala_ianko_radoslav.newsreader;
+package com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.schipala_ianko_radoslav.newsreader.R;
 import com.schipala_ianko_radoslav.newsreader.ui.main.NewsListFragment;
 
 public class MainActivity extends AppCompatActivity {

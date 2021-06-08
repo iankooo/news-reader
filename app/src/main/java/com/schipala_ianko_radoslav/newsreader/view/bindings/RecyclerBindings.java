@@ -4,9 +4,9 @@ import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.schipala_ianko_radoslav.newsreader.adapter.NewsReaderAdapter;
-import com.schipala_ianko_radoslav.newsreader.listener.NewsReaderHandler;
-import com.schipala_ianko_radoslav.newsreader.model.ArticleItemViewModel;
+import com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.adapter.NewsReaderAdapter;
+import com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.listener.NewsReaderHandler;
+import com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.model.ArticleItemViewModel;
 
 import java.util.List;
 

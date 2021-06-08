@@ -1,4 +1,4 @@
-package com.schipala_ianko_radoslav.newsreader.adapter;
+package com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -7,8 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.schipala_ianko_radoslav.newsreader.databinding.NewsItemBinding;
-import com.schipala_ianko_radoslav.newsreader.listener.NewsReaderHandler;
-import com.schipala_ianko_radoslav.newsreader.model.ArticleItemViewModel;
+import com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.listener.NewsReaderHandler;
+import com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.model.ArticleItemViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

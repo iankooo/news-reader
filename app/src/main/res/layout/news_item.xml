@@ -7,11 +7,11 @@
 
         <variable
             name="handler"
-            type="com.schipala_ianko_radoslav.newsreader.listener.NewsReaderHandler" />
+            type="com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.listener.NewsReaderHandler" />
 
         <variable
             name="viewModel"
-            type="com.schipala_ianko_radoslav.newsreader.model.ArticleItemViewModel" />
+            type="com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.model.ArticleItemViewModel" />
     </data>
 
     <LinearLayout

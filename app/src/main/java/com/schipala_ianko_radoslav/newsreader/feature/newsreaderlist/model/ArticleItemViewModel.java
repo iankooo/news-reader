@@ -1,4 +1,4 @@
-package com.schipala_ianko_radoslav.newsreader.model;
+package com.schipala_ianko_radoslav.newsreader.feature.newsreaderlist.model;
 
 public class ArticleItemViewModel {
     public final String title;
