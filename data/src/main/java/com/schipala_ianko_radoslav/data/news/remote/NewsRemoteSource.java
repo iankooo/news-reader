@@ -1,7 +1,10 @@
 package com.schipala_ianko_radoslav.data.news.remote;
 
-import com.schipala_ianko_radoslav.data.news.remote.model.ArticleListDto;
+import com.schipala_ianko_radoslav.data.news.model.Article;
+import com.schipala_ianko_radoslav.data.news.remote.mapper.NewsDtoToNewsMapper;
 import com.schipala_ianko_radoslav.data.remote.NewsApi;
+
+import java.util.List;
 
 import io.reactivex.Single;
 import io.reactivex.annotations.NonNull;
@@ -18,8 +21,9 @@ public class NewsRemoteSource {
         this.newsApi = newsApi;
     }
 
-    public Single<ArticleListDto> getNewsArticles() {
+    public Single<List<Article>> getNewsArticles() {
         return newsApi.getNewsArticles(API_KEY, EN_LANGUAGE_FILTER)
+                .map(new NewsDtoToNewsMapper())
                 .subscribeOn(Schedulers.io());
     }
 
