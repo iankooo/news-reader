@@ -30,6 +30,7 @@ public class NewsReaderViewModel extends AndroidViewModel implements LifecycleOb
     public final SingleLiveEvent<Throwable> error;
     public final SingleLiveEvent<String> openLink;
     private final NewsRepository repo;
+
     @NonNull
     public ObservableList<ArticleItemViewModel> items;
 
@@ -57,10 +58,7 @@ public class NewsReaderViewModel extends AndroidViewModel implements LifecycleOb
     }
 
     private void onNewsArticlesReceived(List<ArticleItemViewModel> articles) {
-        //isLoading.set(false);
         this.items.addAll(articles);
-        //this.items = (ObservableList<ArticleItemViewModel>) articleItemViewModels;
-        //resultText.set(getApplication().getString(R.string.results, articleItemViewModels.size()));
     }
 
     private void onNewsArticlesError(Throwable throwable) {

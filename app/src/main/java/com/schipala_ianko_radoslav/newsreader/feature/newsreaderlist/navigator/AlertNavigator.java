@@ -13,11 +13,9 @@ import io.reactivex.annotations.NonNull;
 
 public class AlertNavigator {
 
-    private final FragmentManager fragmentManager;
     private final Context context;
 
     public AlertNavigator(@NonNull FragmentManager fragmentManager, @NonNull Context context) {
-        this.fragmentManager = fragmentManager;
         this.context = context;
     }
 
